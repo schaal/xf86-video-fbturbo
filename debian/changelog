@@ -1,0 +1,5 @@
+xf86-video-fbturbo (0.4.0-1) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #760025)
+
+ -- Dominik George <nik@naturalnet.de>  Fri, 14 Oct 2016 19:25:46 +0200

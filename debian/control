@@ -1,0 +1,42 @@
+Source: xf86-video-fbturbo
+Section: x11
+Priority: optional
+Maintainer: Dominik George <nik@naturalnet.de
+Build-Depends:
+ debhelper (>= 10),
+ pkg-config,
+ xserver-xorg-dev (>= 2:1.11.99.901),
+ x11proto-core-dev,
+ x11proto-fonts-dev,
+ x11proto-randr-dev,
+ x11proto-render-dev,
+ x11proto-video-dev,
+ xutils-dev (>= 1:7.5+1),
+Standards-Version: 3.9.8
+
+Package: xserver-xorg-video-fbturbo
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${xviddriver:Depends},
+Provides:
+ ${xviddriver:Provides}
+Description: X.Org X server -- fbturbo display driver
+ This package provides the experimental enhanced driver for the Linux
+ framebuffer device on ARM.
+ .
+ The fbturbo driver is primarily optimized for the devices powered by
+ the Allwinner SoC (A10, A13, A20). It can use some of the 2D/3D
+ hardware acceleration features.
+ .
+ Because fbturbo is based on xf86-video-fbdev (with none of the
+ original features stripped), it actually supports all the same hardware
+ as xf86-video-fbdev. Essentially, xf86-video-fbturbo can be just used as
+ a drop-in replacement and run on practically any Linux system. There will
+ be no real difference on x86, but any ARM based system should see better
+ performance thanks to some additional optimizations (the elimination of
+ ShadowFB layer, ARM NEON/VFP code for dealing with uncached framebuffer
+ reads, automatic backing store management for faster window moves).
+ .
+ fbturbo can improve X.org performance on Raspbery Pi immensely,
