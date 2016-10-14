@@ -1,2 +1,2 @@
 # false positive
-server-xorg-video-fbturbo binary: hardening-no-fortify-functions
+xserver-xorg-video-fbturbo binary: hardening-no-fortify-functions
