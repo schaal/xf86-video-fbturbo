@@ -1,7 +1,7 @@
 Source: xf86-video-fbturbo
 Section: x11
 Priority: optional
-Maintainer: Dominik George <nik@naturalnet.de
+Maintainer: Dominik George <nik@naturalnet.de>
 Build-Depends:
  debhelper (>= 10),
  pkg-config,
