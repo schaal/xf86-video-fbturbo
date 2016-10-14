@@ -1,0 +1,2 @@
+# upstream does not provide signed tarballs
+xf86-video-fbturbo source: debian-watch-may-check-gpg-signature
