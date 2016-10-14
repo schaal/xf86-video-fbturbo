@@ -1,0 +1,13 @@
+From: Dominik <nik@naturalnet.de>
+Subject: Fix spelling error in man page
+--- a/man/fbturbo.man
++++ b/man/fbturbo.man
+@@ -68,7 +68,7 @@ Enable rotation of the display. The supp
+ .TP
+ .BI "Option \*qUseBackingStore\*q \*q" boolean \*q
+ Enable the use of backing store for certain windows at the bottom of the
+-stacking order. This allows to avoid expensive redraws caused by expose
++stacking order. This allows one to avoid expensive redraws caused by expose
+ events when dragging one window on top of another. The default heuristics
+ tries to be "smart" and avoid backing store allocation for the active
+ window which has keyboard focus. The purpose is to get the best balance
