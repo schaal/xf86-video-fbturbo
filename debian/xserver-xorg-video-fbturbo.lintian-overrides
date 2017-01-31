@@ -1,2 +1,5 @@
 # false positive
 xserver-xorg-video-fbturbo binary: hardening-no-fortify-functions
+
+# required for X.org modules
+xserver-xorg-video-fbturbo: hardening-no-bindnow usr/lib/x86_64-linux-gnu/xorg/modules/drivers/fbturbo_drv.so
