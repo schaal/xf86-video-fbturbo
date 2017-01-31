@@ -1,7 +1,9 @@
 Source: xf86-video-fbturbo
 Section: x11
 Priority: optional
-Maintainer: Dominik George <nik@naturalnet.de>
+Maintainer: Debian Raspberry Pi Maintainers <pkg-raspi-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Dominik George <nik@naturalnet.de>,
 Homepage: https://github.com/ssvb/xf86-video-fbturbo
 Build-Depends:
  debhelper (>= 10),
@@ -42,4 +44,4 @@ Description: X.Org X server -- fbturbo display driver
  ShadowFB layer, ARM NEON/VFP code for dealing with uncached framebuffer
  reads, automatic backing store management for faster window moves).
  .
- fbturbo can improve X.org performance on Raspbery Pi immensely,
+ fbturbo can improve X.org performance on Raspbery Pi immensely.
