@@ -5,6 +5,9 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all,-pie,-bindnow
 %:
 	dh $@ --with xsf
 
+override_dh_auto_configure:
+	dh_auto_configure -- --with-xorg-module-dir=/usr/lib/xorg/modules
+
 override_dh_auto_install:
 	dh_auto_install
 	find debian/xserver-*/ -name "*.la" -delete
